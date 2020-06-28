@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flipkart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+     <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
+<script type="text/javascript">
+function xyz(){
+      var chk=document.xxx.gen
+      var chk1=document.xxx.adtp
+      var chk2=document.xxx.time
+
+      for(let i=0;i<chk.length;i++){
+      for(let j=0;j<chk1.length;j++){
+      for(let k=0;k<chk2.length;k++){
+
+        if(chk[i].checked && chk1[j].checked && chk2[k].checked){
+          return true;
+        }
+     }
+    }
+}
+    document.getElementById('gen3').innerHTML=  'please select all feilds ';
+      return false;  
+}
+
+</script>
+
+
+
+ 
+
+<script type="text/javascript">
+  
+function fun5() {
+   var email2=document.getElementById('em6').value
+   var pass2=document.getElementById('p6').value
+
+
+if(email2.length==0){
+       document.getElementById('msg7').innerHTML= "please enter email";
+      return false
+}
+
+
+else if(pass2.length==0){
+       document.getElementById('msg8').innerHTML= "please enter password";
+      return false
+}
+
+
+else if(pass2.length<6){
+       document.getElementById('msg8').innerHTML= "password must be 6 letters";
+      return false
+}
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+<script>
+  
+  function fun3() {
+
+   var mob=document.getElementById('mo4').value
+   var email=document.getElementById('em4').value
+   var name=document.getElementById('nm4').value
+   var pass=document.getElementById('p4').value
+   var cpass=document.getElementById('cp4').value
+
+   var mochk= /^[789]{1}[0-9]{9}$/
+   var emailchk= /^[A-Za-z0-9]{3,15}[@]{1}[A-Za-z0-9]{3,15}[.]{1}[A-Za-z0-9.]{3,5}$/
+   var nmchk= /^[A-Za-z ]{3,30}$/
+   var passchk= /^[!@#$%^&*]{4}[A-Za-z0-9]{2}$/
+        
+
+   if(mochk.test(mob)){
+    document.getElementById('mo4').style.border= '3px solid green';
+   }
+   else{
+    document.getElementById('mo4').style.border= '3px solid red';
+    return false;
+   }
+ 
+if(emailchk.test(email)){
+    document.getElementById('em4').style.border= '3px solid green';
+   }
+   else{
+    document.getElementById('em4').style.border= '3px solid red';
+    return false;
+   }
+   
+ if(nmchk.test(name)){
+    document.getElementById('nm4').style.border= '3px solid green';
+   }
+   else{
+    document.getElementById('nm4').style.border= '3px solid red';
+    return false;
+   }
+
+
+
+     if(passchk.test(pass)){
+    document.getElementById('p4').style.border= '3px solid green';
+   }
+   else{
+    document.getElementById('p4').style.border= '3px solid red';
+    return false;
+   }
+
+
+    if(cpass.match(pass)){
+           document.getElementById('cp4').style.border= '3px solid green';
+   }
+   else{
+    document.getElementById('cp4').style.border= '3px solid red';
+    return false;
+   }
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+  body{
+    width: 100% ! important;
+    overflow-x: hidden;
+  }
+
+ /*#im1,#im2,#im3{
+  min-height: 300px ! important;
+ }*/
+
+
+.error{
+  color: red;
+  font-weight: bold;
+}
+
+.success{
+  color: green;
+  font-weight: bold;
+}
+
+ 
+
+#nn2{
+  /*display: none;*/
+}
+
+.fa-star{
+  color: red;
+  font-weight: bold;
+  font-size: 7px;
+}
+
+
+
+.xyz{
+  display: none;
+}
+/*#num1{
+  display: block ! important;
+}*/
+
+
+* {
+  box-sizing: border-box;
+}
+.fa-gift{
+  margin-left: 15px ! important;
+}
+.fa-bars{
+  display: none;
+}
+.fa-bell{
+  display: none;
+}
+/*.fa-cart-plus{
+  display: none;
+}*/
+.zoom {
+  padding: 10px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+ 
+}
+
+.carousel-inner img {
+    width: 100% ! important;
+    height: 15% ! important;
+  }
+
+
+  .footer{
+  width: 1400px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding-top: 0px;
+
+}
+#livesearch{
+  display: none;
+}
+#l1{
+  display: none;
+}
+#s1{
+  display: none;
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+  
+   
+  nav{
+    max-width: 100% ! important;
+    height: 150px ! important;
+  }
+  }
+
+/*toggle bar*/
+  @media(min-width: 360px) and (max-width: 450px){
+   nav .fa-bars {
+    display: block;
+    float: left ! important;
+    margin-left: 10px ! important;
+    margin-top: 30px ! important;
+   
+  }
+
+  }
+
+  /*image navbar barnd*/
+  @media(min-width: 360px) and (max-width: 450px){
+   nav .container a #im{
+     
+    margin-left: 40px ! important;
+    margin-top: -68px ! important;
+  
+  }
+
+     }
+
+
+
+
+
+
+
+
+
+/*visibility hidden of second nav bar*/
+@media(min-width: 360px) and (max-width: 450px){
+
+ #chk2,#nv2,#nv3 {
+     
+    display: none ! important;
+   
+}
+}
+
+/*start editing table of all items*/
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec{
+        
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb th .flex2,.flex3,.flex4,.flex5,.flex6,.flex7{
+     flex:1;
+  
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb th .flex2,.flex3,.flex4,.flex5,.flex6,.flex7{
+     margin-top: 20px ! important;
+     margin: 7px ! important;
+  
+}
+
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb th .flex2,.flex3,.flex4,.flex5,.flex6{
+     margin-top: 10px ! important;
+     /*margin: 7px ! important;*/
+  
+}
+
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb th .flex1{
+     flex:2;
+  
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb{
+    line-height: 10px;
+    font-size: 7px;
+    margin-top: -21px ! important;
+    max-height: 120px ! important;
+  
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb div .zoom{
+  padding: 2px;
+  transition: transform .2s;
+  margin: 0 auto;
+  width: 50px ! important;
+  height: 60px ! important;
+  border-radius: 25px ! important;
+  
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #ic{
+   display: none;
+}
+
+}
+ 
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb div p{
+ font-size: 8px;
+ margin-top: 30px ! important;
+ margin: 5px ! important;
+  
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb div .zoom90,.flex8,.flex9,.flex10,.flex11{
+  display: none;
+  
+}
+
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+ #sec #tb div .zoom:hover {
+  transform: scale(0.7); 
+  /*font-size: 5px ! important;*/
+  height: auto;
+  
+}
+
+}
+
+
+/*End tabale Editing*/
+
+
+
+
+
+/*start editing Fiest nav with Search bar*/
+
+@media(min-width: 360px) and (max-width: 450px){
+      
+   nav .container{
+    width: 500px !important;
+    height: 70px ! important;
+    border-radius: 5px;
+    margin-left:-10px ! important;
+ 
+
+}
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+
+/*collpse class of navbbar  this class already is disply none that you cant see to activate this class you have to type here disply :block*/
+nav .container #num1 {
+    display: block ! important;
+   
+}
+}
+
+
+
+/*visibility hidden of More Cart and Search icon */
+@media(min-width: 360px) and (max-width: 450px){
+
+nav .container #lst2,#lst3,.fa-search{
+    display: none ! important;
+   
+}
+}
+
+
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+nav .container #lst{
+     margin-left: 498px ! important;
+     margin-top: -50px ! important;
+     font-size: 8px;
+     padding: 2px ! important;
+     height: 40px ! important;
+   
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+nav .container #lst1{
+    margin-left: 476px ! important;
+    margin-top: -50px ! important;
+    font-size: 8px;
+    padding: 2px ! important;
+    height: 40px ! important;
+}
+}
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+     /*#chk{*/
+nav .container #num1 ul li form #chk {
+    width: 250px !important;
+    font-size: 12px;
+    height: 40px ! important;
+    border-radius: 5px;
+    /*background-color: green;*/
+    margin:10px ! important;
+    /*margin-top: 10px ! important;*/
+    margin-top: -400px ! important;
+    margin-left: -15px ! important;
+    margin-bottom: 20px ! important;
+  /*  margin-right: 100px ! important;
+  }*/
+
+}
+}
+ 
+
+ /*End editing First Navbar With Search Bar*/
+
+
+
+/*Serach Bar 's  Div Editing*/
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #num1 ul li form #livesearch {
+    /*display: block ! important;*/
+    width: 300px !important;
+    margin-left: -150px ! important;
+    /*width: 100% ! important;*/
+    box-shadow: 1px 1px 15px 1px gray ! important;
+    font-size: 12px;  
+    border-radius: 5px;
+    font-weight: bold;
+    color: black ! important;
+    margin-top: -30px ! important;
+    margin: 2px ! important;
+
+    /*margin-right: 100px ! important;*/
+
+     
+
+}
+}
+ 
+
+
+
+/*  fst Top selection Oferss editing with card grid function  also of all grid*/
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#grid1 {
+  width: 389px ! important;
+  height: 500px ! important;
+
+
+}
+
+}
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#grid1 #grid2 #grid3{
+  width: 158px ! important;
+margin: 5px ! important;
+padding: 5px ! important;
+height: 100 ! important;
+
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#grid1 #grid2 #grid3 h2{
+  /*display: none;*/
+  font-size: 12px;
+
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#grid1 #grid2 #grid90{
+  display: none;
+}
+
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#grid1 #grid2 #grid3 #grid4 #grid5 #grid6 {
+  width: 136px ! important;
+  height: 146px ! important;
+  margin: 5px ! important;
+  margin-left: -30px ! important;
+
+}
+
+}
+
+/*end fst top selection*/
+
+
+/*after top selection edit of all image */
+@media(min-width: 360px) and (max-width: 450px){
+
+#grd1 #grd2{
+  height: 250px ! important;
+  width: 361px ! important;
+}
+
+}
+
+/*footer edit*/
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#fot table th,td{
+ font-size: 8px ! important;
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#fot p{
+ font-size: 7px ! important;
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#fot{
+ width: 360px ! important;
+ /*margin:5px ! important;
+ padding: 5px ! important;*/
+}
+
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+
+#fot table{
+  
+ margin:8px ! important;
+ padding: 7px ! important;
+}
+
+}
+
+/*end of footer*/
+
+
+/*edit login your modal div*/
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel {
+    width: 350px !important;
+    font-size: 13px;  
+    border-radius: 5px;
+    margin: 2px ! important;
+ 
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1  #mymodel2 #mymodel3 {
+    width: 150px !important;
+    margin-left: 0px ! important;
+    margin-top: -58px ! important;
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4 {
+    width: 200px !important;
+    margin-left: 110px ! important;
+    /*background-color: yellow;*/
+    /*margin-top: -5px ! important;*/
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel #mymodel1 #mymodel2 #mymodel90 {
+    /*width: 200px !important;*/
+    margin-left: 110px ! important;
+    /*background-color: yellow;*/
+   
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4  form div input {
+    width: 150px !important;
+    /*margin-left: 110px ! important;*/
+    height: 30px !important;
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4  form div  {
+    /*width: 150px !important;*/
+    margin-left: -20px ! important;
+    /*height: 20px !important;*/
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4  form #fog {
+    font-size: 9px;
+    margin-left: 130px ! important;
+    margin-top: 20px ! important;
+
+    /*height: 20px !important;*/
+       
+
+}
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4  form div textarea {
+     width: 80px ! important;
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel  #mymodel1 #mymodel2 #mymodel4  form {
+     width: 130px ! important;
+
+}
+}
+
+
+/*end edit modal div*/
+
+
+/*edit sign up your modal div*/
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60 {
+    width: 357px !important;
+    font-size: 5px;  
+    border-radius: 5px;
+    margin: 2px ! important;
+ 
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1  #mymodel2 #mymodel3 {
+    width: 120px !important;
+    margin-left: -2px ! important;
+    margin-top: -58px ! important;
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4 {
+    width: 110px !important;
+    margin-left: 190px ! important;
+    padding-left: 5px! important;
+    padding-right: 5px ! important;
+    /*background-color: yellow;*/
+     
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60 #mymodel1 #mymodel2 #mymodel90 {
+    /*width: 200px !important;*/
+    margin-left: 110px ! important;
+    /*background-color: yellow;*/
+   
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form div input {
+    width: 130px !important;
+    /*margin-left: 110px ! important;*/
+    height: 20px !important;
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form div #red {
+    width:  5px ! important;
+    height: 5px !important;
+       
+
+}
+}
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form div  {
+    /*width: 150px !important;*/
+    margin-left: -50px ! important;
+    /*height: 20px !important;*/
+       
+
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form span  {
+    font-size: 9px ! important;
+       
+
+}
+}
+
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form .success,.error  {
+    font-size: 11px ! important;
+       
+
+}
+}
+
+ 
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form input  {
+    font-size: 11px ! important;
+       
+
+}
+}
+
+
+
+
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form #fog {
+    font-size: 9px;
+    margin-left: 130px ! important;
+    margin-top: 20px ! important;
+
+    /*height: 20px !important;*/
+       
+
+}
+}
+
+
+/*end edit sign up modal div*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ table{
+  width: 100% ! important;
+ }
+
+
+</style>
+
+ 
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background: #2874f0" id="don">
+ 
+         <i class="fa fa-bars" style="color: white ! important;font-weight: bold;margin: 2px;margin-left:50px;" data-toggle="dropdown" id="nn1"></i> 
+
+    
+
+       <div class="dropdown-menu" style="margin-top:-1px;background-color: white;margin-left:-15px ! important;margin-top: -50px ! important;width: 320px ! important;" id="nn2">
+            
+            <a href="" class="dropdown-item" style="background-color:#2874f0;color: white;height: 50px;margin-top: -10px ! important; "><i class="fa fa-home">&nbsp;&nbsp;&nbsp;</i>Home</a>
+
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Flipkart Plus Zone</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Electronics</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>TVs & Application</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Fashion</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Home and Furniture</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Mobiles</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Toys and Baby</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Beauty and Personal care</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Sports,Books and More</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Refurbished Products</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Bills and Recharges</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Flights Hotels & Bus</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Insurance</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My Orders</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My Coupons</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My WhishList</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My Account</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My Notifications</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Gift Card</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>My chats</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Help Centre</a>
+            <a href="" class="dropdown-item" style=""><i class="fa fa-gift">&nbsp;&nbsp;&nbsp;</i>Legal</a>
+            
+             
+          </div>
+
+   <div class="container">
+    <!-- <div id="xxx"> -->
+    
+       <!-- <li class="nav-item"> -->
+     <a href="" class=" navbar-brand mr-10"><img src="images/flipn4.jpg"  style="width: 150px;height: 40px;margin-left: -40px" id="im"></a>
+   <!-- </li> -->
+
+
+
+
+ <div class="collapse navbar-collapse" id="num1">
+       <ul class="nav navbar ml-auto">
+        
+         <!-- <div> -->
+<li class="nav-item mr-20"><form><input  type="text"   placeholder= " &nbsp;&nbsp;&nbsp;&nbsp;Search For Products,brands & more"  style="width: 550px;height: 45px;margin-left: -870px; border-radius: 5px;" id="chk"    onkeyup="showResult(this.value)" onkeyup="ssb()"><i class="fa fa-search" style="background-color:;color: white;font-weight: bold;height: 30px;width: 30px; padding: 5px;border-right: none;margin-top:  "></i><br>
+
+
+        <div id="livesearch" style="width: 550px;color: black ;font-weight: bold ;padding: 15px;background-color: white;box-shadow: 1px 1px 15px 1px solid gray;margin-top: 2px;margin-left: -870px;border-radius: 7px;position: absolute;">
+        </div>
+      </form> 
+    </li>
+    <!-- </div> -->
+
+
+
+        <li class="nav-item" id="lst"> <a href="" style="color: #2874f0;background-color: white;width: 180px;margin-left: -260px; font-weight: bold;padding: 6px;border-radius: 5px;list-style: none;text-decoration: none;"   data-toggle="modal"  data-target="#mymodel" id="log1" >Login</a></li>
+
+
+
+        
+
+
+    <div class="modal fade"  id="mymodel" style="width: 780px;height: 900px;margin-left: 280px;margin-top: 30px;">
+                <div class="modal-dialog modal-dialog-center " id="mymodel1">
+                <div class="modal-content " id="mymodel2">
+                 
+              <div class="modal-header" style="margin-left: 580px;" id="mymodel90">
+                <button type="button" class="close" data-dismiss="modal" > 
+                  &times;  </button>
+                
+              </div>
+
+
+
+  <img src="images/filplog3.jpeg" style="width: 340px;height: 800px;margin-left: -132px ;margin-top:-85px;" id="mymodel3">
+ 
+
+ 
+   
+   <div class="jumbotron bg-white" style="width: 470px;height: 800px;margin-left: 200px;margin-top: -800px;padding: 50px;" id="mymodel4">
+
+
+    <form onsubmit="return fun5()" method="post">
+     
+        <div class="form-group">
+       <i class="fa fa-star"></i> <label >Enter Email/Mobile number</label>
+        <input type="text" name="em5" id="em6" class="form-control"  style="width: 100%;"><br>
+        <span id="msg7" style="color: red;font-weight: bold;"></span>
+       
+         </div>
+          <!-- <?php echo $msg5;?> -->
+         
+         <div class="form-group">
+       <i class="fa fa-star"></i> <label>Enter Password</label>
+        
+        <input type="password" name="p5" id="p6" class="form-control"   style="width: 100%;">
+         <span id="msg8" style="color: red;font-weight: bold;"></span>
+        </div> 
+         <!-- <?php echo $msg6;?> -->
+
+          <div>
+            <a  href="verify.html" type="submit" name="submit1" style="background-color:#f27b1a;width: 100%;color: white;height: 40px;font-weight: bold;color: white;border:2px solid #f27b1a;text-decoration: none;text-align: center;padding: 7px; " value=""> Login</a>
+           </div>
+      
+        <!-- <div style="margin-top: 200px;" class="text-center">
+        <a href=""   style="color:#2874f0; text-align: center;list-style: none;">New to FlipKart/ Create an account</a>
+        </div> -->
+        <div id="fog">
+            <a href="forgot1.html" style="margin: 2px;float: right ! important;color: #2874f0;font-weight: bold;">Forgot_Password?</a>
+          </div>
+         
+    </form>
+
+  
+</div>
+ 
+</div>
+</div>
+ 
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+<li class="nav-item" id="lst1"> <a href="" style="color: #2874f0;background-color: white;margin-right: 20px;width: 180px;margin-left: -200px; font-weight: bold;padding: 6px;border-radius: 5px;list-style: none;text-decoration: none;"   data-toggle="modal"  data-target="#mymodel60" id="log2" >SignUp</a>
+      </li>  
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade"  id="mymodel60" style="width: 780px;height: 800px ;margin-left: 280px;margin-top: 30px;font-size: 12px;">
+                <div class="modal-dialog modal-dialog-center " id="mymodel1">
+                <div class="modal-content " id="mymodel2" >
+                 
+              <div class="modal-header" style="margin-left: 580px ;" id="mymodel90" >
+                <button type="button" class="close" data-dismiss="modal" id=""> 
+                  &times;  </button>
+                
+              </div>
+
+
+
+  <img src="images/sign1.jpeg" style="width: 340px;height: 900px ;margin-left: -132px ;margin-top: -85px;" id="mymodel3">
+ 
+
+ 
+   
+   <div class="jumbotron bg-white" style="width: 470px;height: 1010px ;margin-left: 200px ;margin-top: -900px;padding-left: 100px;padding-right: 100px;border:2px solid white;" id="mymodel4">
+
+
+    <form onsubmit="return fun3()" method="post" name="xxx">
+            <!-- <?php echo $msg90;?> -->
+        <span id="gen3" style="color: red;font-weight: bold;"></span>
+        <div class="form-group">
+       <i class="fa fa-star"></i> <span >Enter_Mobile_Number</span>
+        <input type="text" name="mo1" id="mo4" class="form-control" onkeyup="fun3()" style="width: 100%;height: 25px;"   >
+         </div>
+
+         <div class="form-group">
+        <i class="fa fa-star"></i><span >Enter_Email</span>
+        <input type="text" name="em1" id="em4" class="form-control" onkeyup="fun3()" style="width: 100%;height: 25px;"  >
+         </div>
+            <!-- <?php echo $msg1;?>  -->
+
+         <div class="form-group">
+        <i class="fa fa-star"></i><span >Enter_Your_Name</span>
+        <input type="text" name="nm1" id="nm4" class="form-control" onkeyup="fun3()" style="width: 100%;height: 25px;"  >
+         </div>
+
+         <div class="form-group">
+        <i class="fa fa-star"></i><span >Enter_Password</span>
+        <input type="password" name="p1" id="p4" class="form-control" onkeyup="fun3()" style="width: 100%;height: 25px;"  >
+         </div>
+
+         <div class="form-group">
+       <i class="fa fa-star"></i> <span >Re_Enter_Password</span>
+        <input type="password" name="cp1" id="cp4" class="form-control" onkeyup="fun3()" style="width: 100%;height: 25px;">
+         </div>
+
+         <div>
+          <i class="fa fa-star"></i><span>Select_Gender</span><br>
+          <input type="radio" name="gen"   value="male" id="red"> Male<br>
+          <input type="radio" name="gen"   value="male" id="red"> Female<br>
+          <input type="radio" name="gen"   value="male" id="red"> Other<br>
+
+          <!-- <span id="gen3" style="color: red;font-weight: bold;"></span> -->
+        </div>
+
+           <div>
+        <i class="fa fa-star"></i> <span>Country&nbsp;:</span>
+        <input type="text" required=""  name="con1" list="datalist" id="cont2" placeholder="search" 
+        >
+        <datalist id="datalist"  >
+          <option value="india"></option>
+          <option value="sout africa"> </option>
+          <option value="china"> </option>
+          <option value="Australia"> </option>
+          <option value="canada"> </option>
+          <option value="usa"> </option>
+          <option value="london"> </option>
+          <option value="srilanka"></option>
+        </datalist>
+       <span id="con3" style="color: red;font-weight: bold;"></span>
+        </div>
+
+          <div >
+        <i class="fa fa-star"></i><span>State&nbsp;:</span>
+         <select name="st1" id="st2" required="">
+          <option></option>
+          <option>kolkata</option>
+          <option>bhubneswar</option>
+          <option>odisha</option>
+          <option>Bangolore</option>
+          <option>Hyderabad</option>
+          <option>Pune</option>
+          <option>Maharshtra</option>
+          <option>delhi</option>
+          <option>Bihar</option>
+         </select>
+
+         <span id="st3" style="color: red;font-weight: bold;"></span>
+        </div>
+          
+          <div>
+        <i class="fa fa-star" ></i> <span>District&nbsp;:</span>
+         <select name="dst1" id="dst2" required="">
+          <option></option>
+          <option>bhadrak</option>
+          <option>bhubneswar</option>
+          <option>punjab</option>
+          <option>bihar</option>
+          <option>karnatak</option>
+         </select>
+         <span id="dst3" style="color: red;font-weight: bold;"></span>
+        </div>
+
+
+        <div>
+     <i class="fa fa-star"></i> <span>Pin Code&nbsp;:</span>
+        <input type="text " name="pin1" id="pin4"  value="<?php echo $pin;?> " class="form-control" onkeyup="myfun()" style="height: 25px;" required="">
+        <span id="pin3" style="color: red;font-weight: bold;"></span>
+    </div>
+
+       <div>
+          <i class="fa fa-star"></i><span>Select_Address_Type_to_Deliver</span> <br>
+          <input type="radio" name="adtp"   value="Office Address" id="red"> Office Address<br>
+          <input type="radio" name="adtp"   value="Home Address" id="red"> Home Address<br>
+
+          <!-- <span id="adtp3" style="color: red;font-weight: bold;"></span> -->
+        </div>
+
+        <div>
+          <i class="fa fa-star"></i><label>Enter_Delivery_Address</label> 
+          <textarea  name="add" style="width: 100%" id="add4" required="" value="<?php echo $ad;?> " ></textarea>
+           
+          <span id="add3" style="color: red;font-weight: bold;"></span>
+        </div>
+
+
+
+         <div>
+          <i class="fa fa-star"></i><span>Select_Expected_time_to_Contact</span> <br>
+          <input type="radio" name="time"   value="9_AM_TO_12PM" id="red"> 9_AM_TO_12PM<br>
+          <input type="radio" name="time"   value="12_PM_TO_3PM" id="red"> 12_PM_TO_3PM<br>
+          <input type="radio" name="time"   value="3_PM_TO_6PM" id="red"> 3_PM_TO_6PM <br>
+
+          <!-- <span id="extm3" style="color: red;font-weight: bold;"></span> -->
+        </div><br>
+
+
+
+
+
+         <div>
+             <a  href="verify.html" type="submit" name="submit" onclick="return xyz()"  style="background-color:#f27b1a;width: 100%;color: white;height: 40px;font-weight: bold;color: white;border:2px solid #f27b1a;text-transform: none;text-align: center;padding: 7px; " value=""  > Sign Up</a>
+           </div>
+      
+       <!--  <div style="margin-top: 200px ! important;" class="text-center">
+        <a href=""   style="color:#2874f0; text-align: center;list-style: none;">New to FlipKart/ Create an account</a>
+        </div> -->
+
+         
+    </form>
+
+
+
+
+
+  
+</div>
+ 
+</div>
+</div>
+ 
+</div>
+
+ 
+
+
+        <li class="dropdown-item" style="width: 100px;margin-left: -100px; background-color: #2874f0;"  id="lst2"><a href="" class="text-white" data-toggle="dropdown" style="font-weight: bold" id="log3"> More</a>&nbsp; <i class="fa fa-angle-down"  data-toggle="dropdown" style="color: white;"></i>
+          <div class="dropdown-menu" style="margin-top: 9px ! important;background-color: white;margin-left: -150px ! important;">
+            
+            <a href="" class="dropdown-item" style="">Notification Preference</a>
+            <a href="" class="dropdown-item" style="">Sell on Flipkart</a>
+            <a href="" class="dropdown-item" style=""> 24*7 Coustomer Care</a>
+            <a href="" class="dropdown-item" style="">Advertise</a>
+            <a href="" class="dropdown-item" style="">Download App</a>
+             
+          </div>
+        </li>
+
+
+ 
+        <li id="lst3" class="dropdown-item text-white" style="width: 100px; background-color: #2874f0;"><i class="fa fa-cart-plus"   style="color: white;"  ></i>&nbsp;<a class="text-white" style="font-weight: bold" href="login1.php" style="" >Cart </a></li>
+
+
+
+
+       </ul>
+      </div>
+    </div>
+  <!-- </div> -->
+  </nav>
+ 
+<script>
+  $(document).ready(function(){
+    $("#chk").click(function(){
+    $("#chk2,#chk3,#chk7,#chk8,#chk9").hide()  
+
+       $("#livesearch").show()
+       // $("[id=lst1]").hide()
+       // $("[id=lst]").hide()
+       // $("[id=lst2]").hide()
+       // $("[id=lst3]").hide()
+       $("[id=sec]").hide()
+       $("[id=chk4]").hide()
+       $("[id=grid1]").hide()
+       $("[id=grd1]").hide()
+       $("[id=fot]").hide()
+       $("[id=ic]").hide()
+       // $("[id=don]").hide()
+           
+  })
+    $("#livesearch").mouseleave(function(){
+    $("#chk2,#chk3,#chk7,#chk8,#chk9").show()
+    $("[id=lst1]").show()
+    $("[id=lst]").show()
+    $("[id=lst2]").show()
+    $("[id=lst3]").show()
+    $("[id=sec]").show()
+    $("[id=chk4]").show()
+    $("[id=grid1]").show()
+    $("[id=grd1]").show()
+    $("[id=fot]").show()
+    // $("[id=ic]").show()
+    // $("[id=don]").show()
+    $("#livesearch").hide()  
+   
+       
+    
+   })
+ })
+
+
+</script>
+
+
+
+
+
+  <script>
+function showResult(str) {
+  if (str.length==0) {
+    // document.getElementById("livesearch").innerHTML="";
+    // document.getElementById("livesearch").style.border="0px";
+    // document.getElementById('livesearch').style.display= "none";
+    return;
+  }
+   
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","test.html?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+ 
+
+
+
+
+<nav class="navbar navbar-expand-sm bg-white navbar-white" id="chk2">
+  <div class="container">
+     
+    <div class="collapse navbar-collapse" id="nv3">
+      <ul class="nav navbar ml-auto">
+
+        <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white;">
+            <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+          <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white;margin-left: 160px;">
+            <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+         <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white; margin-left: 300px;">
+            <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+         <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white; margin-left: 450px;">
+           <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+         <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white; margin-left: 600px;">
+           <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+         <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white; margin-left: 750px;">
+           <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+         <li class="nav-item-dropdown ml-4" type=""><a href="" data-toggle="dropdown" class="btn btn-white" style="color:black;font-weight:bold;">Electronics</a>&nbsp; <i class="fa fa-angle-down" data-toggle="dropdown"></i>
+          <div class="dropdown-menu" style="margin-top: -5px ! important;background-color: white; margin-left: 900px;">
+           <a href="" class="dropdown-item" style="font-weight: bold;">link1</a>&nbsp;<i class="fa fa-caret-right" style="float: right;margin-right: 80px;margin-top: -23px ! important;"></i>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+            <a href="" class="dropdown-item" style="">link1</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+</nav>
+
+
+
+
+
+
+ 
+
+<section style="width: 100%;" id="sec"  style="background: #2874f0  ! important;">
+<table style="color: white;width: 100%" id="tb" style="background: #2874f0  ! important;">
+<tr style="justify-content: space-between;">	
+ <th>   <div class="flex1"><img src="images/newban.jpg" class="zoom90">
+</div></th> 
+
+ <th><div class="flex9"></div></th>
+ <th><div class="flex10"></div></th>
+ <th><div class="flex11"></div></th>
+
+ <th><div class="flex2"><img src="images/a.jpg" class="zoom" ><p>Mobiles & Tables</p>
+ </div></th>
+
+ <th><div class="flex3"><img src="images/b.jpg"class="zoom"> <p>Eloctronics</p> 
+</div></th>
+ <th><div class="flex4"><img src="images/c.jpg"class="zoom"> <p>Fashion</p> 
+</div></th>
+ <th><div class="flex5"><img src="images/f.jpg"class="zoom"> <p>TV& Application </p>
+</div></th>
+ <th><div class="flex6"> <img src="images/d.jpg"class="zoom"><p>Beauty Toys & more</p>
+</div></th>
+ <th><div class="flex7"><img src="images/e.jpg"class="zoom"> <p>Home & Furniture</p>
+</div></th>
+ <th><div class="flex8"><img src="images/h.jpg"class="zoom"> <p>Samarth Store</p>
+</div></th>
+</tr>
+</table>
+</section>
+<div id="ic">
+<img src="images/icici.jpg" style="width: 100%" height="55px">
+</div>
+
+ 
+
+<div id="demo" class="carousel slide" data-ride="carousel" width="100%" id="chk4">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+     <!-- <li data-target="#demo" data-slide-to="3"></li> -->
+      <!-- <li data-target="#demo" data-slide-to="4"></li>
+       <li data-target="#demo" data-slide-to="5"></li> -->
+  </ul>
+  <div class="carousel-inner" id="chk5">
+    <!-- <div class="carousel-item active">
+      <img src="images/flipslid1.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+     <div class="carousel-item" id="chk6">
+      <img src="images/flipslid3.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div> -->
+     <div class="carousel-item active" id="chk7">
+      <img src="images/flipslid6.jpg" alt="Chicago" width="1100" height="500" id="im1">
+      <div class="carousel-caption">
+        <!-- <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p> -->
+      </div>   
+    </div>
+     <div class="carousel-item" id="chk8">
+      <img src="images/flipslid4.jpg" alt="Chicago" width="1100" height="500" id="im2">
+      <div class="carousel-caption">
+       <!--  <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p> -->
+      </div>   
+    </div>
+    <div class="carousel-item" id="chk9">
+      <img src="images/flipslid6.jpg" alt="New York" width="1100" height="500" id="im3">
+      <div class="carousel-caption">
+       <!--  <h3>New York</h3>
+        <p>We love the Big Apple!</p> -->
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+ 
+
+ 
+<div class="container-fluid" id="grid1">
+	<div class="row  " style="width: 100%;height: 100%; background-color: #2874f06b;" id="grid2">  	
+
+     <div class="card" id="grid3"> 
+     	<div class="card-body" id="grid4">
+     		<h2 class="card-title">Top Selection Suvendu is Here.</h2>
+     		<div class="col-lg-6 col-md-6 col-12 " id="grid5">
+     			<img src="images/toofr2.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+
+        <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/grid7.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+            <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/orma.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+              <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+             <div class="card" id="grid90"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/toofr2.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+           
+   </div>
+ </div>
+
+
+
+
+
+
+
+     <div class="container-fluid" id="grd1">
+     	<div class="card">
+     		<img src="images/topofr3.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
+        </div>
+      </div>
+
+
+
+
+
+
+<div class="container-fluid" id="grid1">
+  <div class="row  " style="width: 100%;height: 100%; background-color: rgba(59, 143, 236, 0.75);" id="grid2">   
+
+     <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <h2 class="card-title">Offers</h2>
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row5.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+
+        <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+            <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row1.jpeg" width="197px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+              <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row2.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+             <div class="card" id="grid90"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/toofr2.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+           
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container-fluid">
+  <div class="row bg-warning width-100% height-100%">
+        
+     <div class="card"> 
+      <div class="card-body">
+        <h2 class="card-title">Offers</h2>
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="images/toofr2.jpeg" width="152px" height="120" class="image-fluid " class="zoom">
+               </div>
+           </div>
+       </div>
+        <div class="card"> 
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="images/row.jpeg" width="152px" height="120" class="image-fluid" class="zoom">
+               </div>
+           </div>
+            </div>
+            <div class="card"> 
+      <div class="card-body">
+        <h2 class="card-title"></h2>
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <img src="images/row1.jpeg." width="153px" height="120" class="image-fluid"class="zoom">
+               </div>
+           </div>
+            </div>
+              <div class="card"> 
+            <div class="card-body">
+        <h2 class="card-title"></h2>
+        <div class="col-lg-6 col-md-6 col-12  ">
+          <img src="images/row2.jpeg" width="152px" height="120" class="image-fluid" class="zoom">
+               </div>
+           </div>
+            </div>
+             <div class="card"> 
+            <div class="card-body">
+        <h2 class="card-title"></h2>
+        <div class="col-lg-6 col-md-6 col-12  ">
+          <img src="images/row5.jpeg" width="152px" height="120" class="image-fluid  " class="zoom">
+               </div>
+           </div>
+            </div>
+             <div class="card"> 
+            <div class="card-body">
+        <h2 class="card-title"></h2>
+        <div class="col-lg-6 col-md-6 col-12  ">
+          <img src="images/row4.jpeg" width="152px" height="120" class="image-fluid" class="zoom">
+               </div>
+           </div>
+            </div>
+    </div>
+    </div>    -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+     <div class="container-fluid" id="grd1">
+      <div class="card">
+        <img src="images/footr4.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="grid1">
+  <div class="row  " style="width: 100%;height: 100%; background-color: rgba(59, 143, 236, 0.75);" id="grid2">   
+
+     <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <h2 class="card-title">Offers</h2>
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/b1.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+
+        <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/b2.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+            <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/b3.jpeg" width="197px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+              <div class="card" id="grid3"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/row2.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+
+             <div class="card" id="grid90"> 
+      <div class="card-body" id="grid4">
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/toofr2.jpeg" width="190px"  height="170" class="image-fluid " id="grid6">
+               </div>
+           </div>
+       </div>
+           
+   </div>
+ </div>
+
+
+
+
+
+
+ 
+
+
+
+         <div class="container-fluid width-100%" id="grd1">
+      <div class="card">
+        <img src="images/footer6.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
+        </div>
+     </div>
+
+         <div class="container-fluid width-100%" id="grd1">
+      <div class="card">
+        <img src="images/footer9.jpeg" class="width-1300 height-400px"  class="zoom" id="grd2">
+        </div>
+      </div>
+
+         <div class="container-fluid width-100%" id="grd1">
+      <div class="card">
+        <img src="images/footer10.jpeg" class="width-1300 height-400px" class="zoom" id="grd2">
+        </div>
+      </div>
+
+     <div class="container-fluid width-100%" id="grd1">
+      <div class="card">
+        <img src="images/footer11.jpeg" class="width-1300 height-400px" class="zoom" id="grd2">
+        </div>
+      </div>
+
+         <div class="container-fluid width-150%" id="grd1">
+      <div class="card">
+        <img src="images/footer12.jpeg" class="width-1300 height-400px" class="zoom" id="grd2">
+        </div>
+      </div>
+
+
+
+
+
+
+ 
+
+         <div class="card-footer" style="background-color: #212121;width: 100%;" id="fot">
+
+    <table style=" color:white;margin-left: 150px;margin-right: 150px;padding: 80px;border: none;">
+  <tr>
+    <th style="font-weight: bold;border: none;margin-right: 50px; margin-bottom: 30px;">Customer Service</th>
+    <th style="font-weight: bold;border: none;margin-right: 50px;margin-bottom: 30px;">Useful Links</th>
+    <th style="font-weight: bold;border: none;margin-bottom: 30px;">Visit Other ICICI Bank Sites</th>
+  </tr>
+  <tr>
+    
+    <td style="border: none;margin-left: -30px;">Customer ServiceCustomer Care NumbersUseful LinksGet User ID|Ways To Bank |Online Banking|Savings Account|PPF| Personal Finance Tools | Form Center |Gold Rate Today| Media Gallery|Credit CardVisit Other ICICI Bank SitesICICI Group | ICICI Foundation | ICICI Lombard General Insurance | ICICI Securities | ICICI Prudential Life Insurance | ICICI Prudential</td>
+    <td style="border: none;margin-left: -30px;">Customer ServiceCustomer Care NumbersUseful LinksGet User ID|Ways To Bank |Online Banking|Savings Account|PPF| Personal Finance Tools | Form Center |Gold Rate Today| Media Gallery|Credit CardVisit Other ICICI Bank SitesICICI Group | ICICI Foundation | ICICI Lombard General Insurance | ICICI Securities | ICICI Prudential Life Insurance | ICICI Prudential</td>
+    <td style="border: none;margin-left: -30px ; ">Customer ServiceCustomer Care NumbersUseful LinksGet User ID|Ways To Bank |Online Banking|Savings Account|PPF| Personal Finance Tools | Form Center |Gold Rate Today| Media Gallery|Credit CardVisit Other ICICI Bank SitesICICI Group | ICICI Foundation | ICICI Lombard General Insurance | ICICI Securities | ICICI Prudential Life Insurance | ICICI Prudential</td>
+  </tr>
+   
+
+</table> <br><br>
+<p style="color:white;">
+Terms & Conditions | Interest Rates | Service Charges & Fees | Do Not Call Registry | Disclaimer | Multilingual Disclaimer | Code of Commitment | Group Code of Business Conduct and Ethics | Basel II Disclosures | Notice Board | Use of Unparliamentary Language by Customers | Privacy | USA Patriot Act Certification</p>
+
+ </div>
+   
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
