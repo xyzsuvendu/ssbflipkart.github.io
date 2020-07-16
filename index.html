@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>flipkart</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <title>flipkart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
     
      <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -156,6 +168,12 @@ if(emailchk.test(email)){
   body{
     width: 100% ! important;
     overflow-x: hidden;
+     background-color: #2874f0;
+  }
+  .ol{
+    /*width: 100%;*/
+    height: 100% ! important;
+    margin-top: 50px ! important;
   }
 
  /*#im1,#im2,#im3{
@@ -288,7 +306,7 @@ if(emailchk.test(email)){
 /*visibility hidden of second nav bar*/
 @media(min-width: 360px) and (max-width: 450px){
 
- #chk2,#nv2,#nv3 {
+ #chk2,#nv2,#nv3,#ic {
      
     display: none ! important;
    
@@ -861,6 +879,27 @@ nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form #fog {
 }
 
 
+@media(min-width: 360px) and (max-width: 450px){
+    #owl1,#owl2 {
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+       
+
+}
+}
+
+
+@media(min-width: 360px) and (max-width: 450px){
+    #owl1{
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+       
+
+}
+}
+
 /*end edit sign up modal div*/
 
 
@@ -1260,6 +1299,7 @@ nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form #fog {
        $("[id=chk7]").css({"display":"none"})
        $("[id=chk8]").css({"display":"none"})
        $("[id=chk9]").css({"display":"none"})
+       $("[id=owl1]").css({"display":"none"})
        
        
   })
@@ -1276,6 +1316,8 @@ nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form #fog {
     $("[id=grd1]").show()
     $("[id=fot]").show()
     $("[id=don]").show()
+    $("[id=ic]").show()
+    $("[id=owl1]").show()
     $("#livesearch").hide()  
     
    })
@@ -1306,6 +1348,8 @@ nav .container #mymodel60  #mymodel1 #mymodel2 #mymodel4  form #fog {
     $("[id=grd1]").show()
     $("[id=fot]").show()
     $("[id=don]").show()
+    $("[id=ic]").show()
+    $("[id=owl1]").show()
     $("#livesearch").hide()  
 
       }
@@ -1555,7 +1599,7 @@ function showResult(str) {
 
 <section style="width: 100%;" id="sec"  style="background: #2874f0  ! important;">
 <table style="color: white;width: 100%" id="tb" style="background: #2874f0  ! important;">
-<tr style="justify-content: space-between;">	
+<tr style="justify-content: space-between;">  
  <th>   <div class="flex1"><img src="images/newban.jpg" class="zoom90">
 </div></th> 
 
@@ -1645,13 +1689,13 @@ function showResult(str) {
 
  
 <div class="container-fluid" id="grid1">
-	<div class="row  " style="width: 100%;height: 100%; background-color: #2874f06b;" id="grid2">  	
+  <div class="row  " style="width: 100%;height: 100%; background-color: #2874f06b;" id="grid2">   
 
      <div class="card" id="grid3"> 
-     	<div class="card-body" id="grid4">
-     		<h2 class="card-title">Top Selection Suvendu is Here.</h2>
-     		<div class="col-lg-6 col-md-6 col-12 " id="grid5">
-     			<img src="images/toofr2.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
+      <div class="card-body" id="grid4">
+        <h2 class="card-title">Top Selection Suvendu is Here.</h2>
+        <div class="col-lg-6 col-md-6 col-12 " id="grid5">
+          <img src="images/toofr2.jpeg" width="135px"  height="170" class="image-fluid " id="grid6">
                </div>
            </div>
        </div>
@@ -1698,11 +1742,48 @@ function showResult(str) {
 
 
 
-     <div class="container-fluid" id="grd1">
-     	<div class="card">
-     		<img src="images/topofr3.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
+    <!--  <div class="container-fluid" id="grd1">
+      <div class="card">
+        <img src="images/topofr3.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
         </div>
-      </div>
+      </div> -->
+
+
+
+
+
+
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1843,16 +1924,67 @@ function showResult(str) {
 
 
 
-
+<!-- 
      <div class="container-fluid" id="grd1">
       <div class="card">
         <img src="images/footr4.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
         </div>
       </div>
+ -->
 
 
 
 
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+<!-- </div> -->
+
+
+<script src="owl.carousel2.js"></script>
+ 
+
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 7,
+    nav: true,
+    dots: false,
+    autoplay:true,
+    // u dont need to use mediia query here u can do the same task
+    responsive:{
+        360:{
+            items:3
+        },
+        450:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+</script>
 
 
 
@@ -1915,7 +2047,7 @@ function showResult(str) {
 
 
 
-         <div class="container-fluid width-100%" id="grd1">
+         <!-- <div class="container-fluid width-100%" id="grd1">
       <div class="card">
         <img src="images/footer6.jpeg" class="width-100% height-400px" class="zoom" id="grd2">
         </div>
@@ -1943,8 +2075,127 @@ function showResult(str) {
       <div class="card">
         <img src="images/footer12.jpeg" class="width-1300 height-400px" class="zoom" id="grd2">
         </div>
-      </div>
+      </div> -->
 
+
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+
+
+
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+
+
+
+
+<div class="container-fluid mt-5" style=" background-color: #2874f0;margin-top: 1px ! important;" id="owl1">
+<div class="card" style=" background-color: #2874f0;" id="owl2">
+
+    <div class="owl-carousel owl-theme" style="padding: 30px;" id="owl3">
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed6.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+    <div class="item"><img src="images/bed8.jpeg" alt="flower" class="img-fluid" id="ol"></div>
+
+</div>
+  
+</div>
+</div>
+
+
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 7,
+    nav: true,
+    dots: false,
+    autoplay:true,
+    // u dont need to use mediia query here u can do the same task
+    responsive:{
+        360:{
+            items:3
+        },
+        450:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+</script>
 
 
 
